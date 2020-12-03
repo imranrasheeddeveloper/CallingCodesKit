@@ -10,7 +10,15 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-
+1-Go to Pods 
+2-Select Target CallingCodesKit
+3-Click on build Phase
+4-Click on Copy Bundel Resources
+5-click on + Button
+6- In CallingCodesKit Section You can find out Resources folder
+7- Select CountryCallingCode.json
+8-click add
+for more Details please See the video in Usage Section 
 ## Installation
 
 CallingCodesKit is available through [CocoaPods](https://cocoapods.org). To install
@@ -21,6 +29,9 @@ pod 'CallingCodesKit'
 ```
 
 ## Usage
+
+![Setup](https://user-images.githubusercontent.com/51517176/101093513-b4f58a80-35dc-11eb-82db-156949edb28f.gif)
+
 
 ```
 import CallingCodesKit
