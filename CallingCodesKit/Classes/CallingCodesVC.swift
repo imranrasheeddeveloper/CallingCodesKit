@@ -22,6 +22,7 @@ final public class CallingCodesVC: UIViewController,UISearchResultsUpdating {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        self.definesPresentationContext = true
         contreisCallingCodes()
         tableview.delegate = self
         tableview.dataSource = self
@@ -93,8 +94,6 @@ extension CallingCodesVC  : UITableViewDelegate,UITableViewDataSource{
             
             delegate?.countryCodeAndFlag(name: countriesCallingCodeArray[indexPath.row].name!, flag: countriesCallingCodeArray[indexPath.row].flag!, code: countriesCallingCodeArray[indexPath.row].code!, dialCode: countriesCallingCodeArray[indexPath.row].dialCode!)
         }
-        resultSearchController.searchBar.isHidden = true
-        resultSearchController.searchBar.resignFirstResponder()
         self.navigationController?.popViewController(animated: true)
         
     }

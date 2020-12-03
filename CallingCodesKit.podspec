@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'imranrasheeddeveloper' => 'imranrasheed.developer@outlook.com' }
   s.source           = { :git => 'https://github.com/imranrasheeddeveloper/CallingCodesKit.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/TheImranRasheed'
+  #s.social_media_url = 'https://twitter.com/<TheImranRasheed>'
   s.swift_version = '5.0'
   s.ios.deployment_target = '9.0'
   
