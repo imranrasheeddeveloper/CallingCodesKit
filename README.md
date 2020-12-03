@@ -19,11 +19,15 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'CallingCodesKit'
 ```
-## Usage
-import CountriesCallingCodes
 
-class ViewController: UIViewController, callingCodeData {
-    
+## Usage
+
+```
+import CallingCodesKit
+ 
+class ViewController: UIViewController, callingCodeData
+   
+  {
     @IBOutlet weak var textLabel : UILabel!
     func countryCodeAndFlag(name: String, flag: String, code: String, dialCode: String) {
         textLabel.text = "\(flag) \(name) \(dialCode)"
@@ -38,7 +42,8 @@ class ViewController: UIViewController, callingCodeData {
         let tap = UITapGestureRecognizer(target: self, action: #selector(callingCodeVC))
         textLabel.addGestureRecognizer(tap)    
     }
-    }
+ }
+```
 
 
 ## Screenshot
