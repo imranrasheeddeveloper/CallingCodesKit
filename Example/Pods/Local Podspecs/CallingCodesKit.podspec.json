@@ -1,0 +1,27 @@
+{
+  "name": "CallingCodesKit",
+  "version": "0.1.0",
+  "summary": "A short description of CallingCodesKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/imranrasheeddeveloper/CallingCodesKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "imranrasheeddeveloper": "imranrasheed.developer@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/imranrasheeddeveloper/CallingCodesKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CallingCodesKit/Classes/**/*",
+  "resource_bundles": {
+    "CallingCodesKit": [
+      "CallingCodesKit/Assets/CountryCallingCode.json"
+    ]
+  }
+}

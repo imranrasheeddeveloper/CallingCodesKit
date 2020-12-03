@@ -1,0 +1,6 @@
+framework module CallingCodesKit {
+  umbrella header "CallingCodesKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

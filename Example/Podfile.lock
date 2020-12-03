@@ -1,0 +1,16 @@
+PODS:
+  - CallingCodesKit (0.1.0)
+
+DEPENDENCIES:
+  - CallingCodesKit (from `../`)
+
+EXTERNAL SOURCES:
+  CallingCodesKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CallingCodesKit: b3ccf51bd932e77cfe3dee4e99675b691fecca3d
+
+PODFILE CHECKSUM: 5156eba32e43b04c52a74e1755e61861f9caa039
+
+COCOAPODS: 1.10.0

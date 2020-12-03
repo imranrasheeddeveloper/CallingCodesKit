@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07ED093F66777FE1B5065BFBD7E3ACEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		33128E464719529A6961BC6F3B459349 /* Pods-CallingCodesKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7092F49203DE08B419D0F9E5E4170B0C /* Pods-CallingCodesKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36AE0688F9A3BB7BFFC2F8742CF913AC /* Pods-CallingCodesKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A7831C7983480A0A601A46B2F3127A /* Pods-CallingCodesKit_Tests-dummy.m */; };
+		4FF2F4B925794CBF00671F68 /* CallingCodesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2F4B825794CBF00671F68 /* CallingCodesVC.swift */; };
+		4FF2F4C025794D1800671F68 /* CountryCallingCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2F4BF25794D1800671F68 /* CountryCallingCodeCell.swift */; };
+		4FF2F4C9257954BA00671F68 /* CountryCallingCode.json in Resources */ = {isa = PBXBuildFile; fileRef = D7909FBD8D1B22A7F406113D52B39007 /* CountryCallingCode.json */; };
+		506810AB253349449208305CC07EBDED /* Pods-CallingCodesKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB4D84B30CD8A2EB948B264D247A504 /* Pods-CallingCodesKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B6CA19C2880188329F4DA04E72F912F /* CallingCodesKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB5900533855733FF944BFF59779F5DF /* CallingCodesKit.bundle */; };
+		7A2817EAC804B869676D2366AE878EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		84C46447FA61A81FF360F968037835A3 /* CountryCallingCode.json in Resources */ = {isa = PBXBuildFile; fileRef = D7909FBD8D1B22A7F406113D52B39007 /* CountryCallingCode.json */; };
+		9729A0CFEB52D9EBEC51B46C625B35CF /* Pods-CallingCodesKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA42F080BE02D9E18D063F16731221C /* Pods-CallingCodesKit_Example-dummy.m */; };
+		A23E91B18B250026ACB51B31BD3D4D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C010CDE83CC83FC59BC8DDE5BD825778 /* CallingCodesKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37973C21B00893AAE71F3166444F8752 /* CallingCodesKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2BD87F56492B8DF95B58A4C30E5D382 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7209F9A7E19FFEF645B8F13E26515 /* ReplaceMe.swift */; };
+		F8A76596743034E06AC2904862034240 /* CallingCodesKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBAD5DA4B9C76A03C84FC616A3DC45F /* CallingCodesKit-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D26E2832C42FF66ECFD2D67B92CFC90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D966AD4F75B854A06714D1A54EABE559;
+			remoteInfo = "Pods-CallingCodesKit_Example";
+		};
+		ADEA6EB6C85F21551FF4A75A8C01DE14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9EBD612D4F4BEA977B2AC74CA86A2E8;
+			remoteInfo = CallingCodesKit;
+		};
+		F25BD3C21C8360DB74016C3B8B4DABC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA0B2A867A469EB9EB557E1D5F74BF1;
+			remoteInfo = "CallingCodesKit-CallingCodesKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CFCB1AD12F6118FB214FE4A879510BF /* CallingCodesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallingCodesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10FFB01B14F57C2BB04871C2C1685FDA /* CallingCodesKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CallingCodesKit-prefix.pch"; sourceTree = "<group>"; };
+		194884144B5788E16C2B8591F4C5CC21 /* Pods-CallingCodesKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CallingCodesKit_Example-Info.plist"; sourceTree = "<group>"; };
+		1B9962007251B4CADC4E7B8D31FCE7A6 /* Pods-CallingCodesKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CallingCodesKit_Tests.modulemap"; sourceTree = "<group>"; };
+		1BA42F080BE02D9E18D063F16731221C /* Pods-CallingCodesKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CallingCodesKit_Example-dummy.m"; sourceTree = "<group>"; };
+		1E099C9FE5ED0FB3B73008E7803B324D /* Pods-CallingCodesKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CallingCodesKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24F3EBE60A297E6F994E51C41BBA3DB3 /* Pods-CallingCodesKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CallingCodesKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		26F56E228D646D3F2B5DDDF75DD12E9F /* CallingCodesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CallingCodesKit.debug.xcconfig; sourceTree = "<group>"; };
+		2790A5EABC5086E031F64B6CD417D2BA /* Pods-CallingCodesKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallingCodesKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		37973C21B00893AAE71F3166444F8752 /* CallingCodesKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CallingCodesKit-umbrella.h"; sourceTree = "<group>"; };
+		46A7831C7983480A0A601A46B2F3127A /* Pods-CallingCodesKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CallingCodesKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		4FF2F4B825794CBF00671F68 /* CallingCodesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CallingCodesVC.swift; path = CallingCodesKit/Classes/CallingCodesVC.swift; sourceTree = "<group>"; };
+		4FF2F4BF25794D1800671F68 /* CountryCallingCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryCallingCodeCell.swift; path = CallingCodesKit/Classes/CountryCallingCodeCell.swift; sourceTree = "<group>"; };
+		7092F49203DE08B419D0F9E5E4170B0C /* Pods-CallingCodesKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CallingCodesKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		755C30F054A3A354F22E7D73F4551C42 /* CallingCodesKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CallingCodesKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7AC42D1B85889FF8205613B390EE789C /* Pods_CallingCodesKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallingCodesKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AFD6BA402001B0EF412632082324804 /* Pods-CallingCodesKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CallingCodesKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7FB71012F7CC1CC7F7BD3AD0077944AC /* Pods-CallingCodesKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallingCodesKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		867A3D1FCB1EA5F2F586C80E96C71D26 /* CallingCodesKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CallingCodesKit-Info.plist"; sourceTree = "<group>"; };
+		930A1A00388C491426867FDE5D19749D /* Pods-CallingCodesKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CallingCodesKit_Example.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EDC4DA577A3502C244DC3CDC5E8199C /* Pods_CallingCodesKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallingCodesKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92B43FF6BBD81FE6AB4E7D2B6B58781 /* Pods-CallingCodesKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallingCodesKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A9CDE2DAC0702331BE51E4FAD33B648C /* CallingCodesKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CallingCodesKit.modulemap; sourceTree = "<group>"; };
+		AFBAD5DA4B9C76A03C84FC616A3DC45F /* CallingCodesKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CallingCodesKit-dummy.m"; sourceTree = "<group>"; };
+		B5C7209F9A7E19FFEF645B8F13E26515 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = CallingCodesKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		BA05515DD5C0D0182690BA0A9F397AB0 /* CallingCodesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CallingCodesKit.release.xcconfig; sourceTree = "<group>"; };
+		BAB0D0DCEE3ED58ED07BA67AAF853E99 /* ResourceBundle-CallingCodesKit-CallingCodesKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CallingCodesKit-CallingCodesKit-Info.plist"; sourceTree = "<group>"; };
+		C1415A5F1A4F875B9AF186F9B2FA240C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CB5900533855733FF944BFF59779F5DF /* CallingCodesKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallingCodesKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7909FBD8D1B22A7F406113D52B39007 /* CountryCallingCode.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = CountryCallingCode.json; path = CallingCodesKit/Assets/CountryCallingCode.json; sourceTree = "<group>"; };
+		D985F951C1658F06A95CA40BB5646545 /* Pods-CallingCodesKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CallingCodesKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		DF7990E60F9241680A9B151B92969997 /* Pods-CallingCodesKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CallingCodesKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E942F0B9B57341C906A0107734B0DBDF /* Pods-CallingCodesKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CallingCodesKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA6CD9514DFFB560414755B3E59C4A3D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EFB4D84B30CD8A2EB948B264D247A504 /* Pods-CallingCodesKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CallingCodesKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FC7B0BCB84ED2996BEB91B0AB0E23318 /* Pods-CallingCodesKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallingCodesKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6288316E1B8BAFE64747CE5BF8FBF76B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9DB249504E7D9B2505519DCE771678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07ED093F66777FE1B5065BFBD7E3ACEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD47E79A3501B3F8EA760D1EF9813FD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23E91B18B250026ACB51B31BD3D4D36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2716D26AC59D867B00462187C7431E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2817EAC804B869676D2366AE878EC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53B85854516FEAE2F253953F7AA79B6F /* Pods-CallingCodesKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1B9962007251B4CADC4E7B8D31FCE7A6 /* Pods-CallingCodesKit_Tests.modulemap */,
+				E942F0B9B57341C906A0107734B0DBDF /* Pods-CallingCodesKit_Tests-acknowledgements.markdown */,
+				7AFD6BA402001B0EF412632082324804 /* Pods-CallingCodesKit_Tests-acknowledgements.plist */,
+				46A7831C7983480A0A601A46B2F3127A /* Pods-CallingCodesKit_Tests-dummy.m */,
+				D985F951C1658F06A95CA40BB5646545 /* Pods-CallingCodesKit_Tests-Info.plist */,
+				EFB4D84B30CD8A2EB948B264D247A504 /* Pods-CallingCodesKit_Tests-umbrella.h */,
+				7FB71012F7CC1CC7F7BD3AD0077944AC /* Pods-CallingCodesKit_Tests.debug.xcconfig */,
+				2790A5EABC5086E031F64B6CD417D2BA /* Pods-CallingCodesKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-CallingCodesKit_Tests";
+			path = "Target Support Files/Pods-CallingCodesKit_Tests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6377BBEB874E9DFDC9152DCEB37EDEC8 /* Pods-CallingCodesKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				930A1A00388C491426867FDE5D19749D /* Pods-CallingCodesKit_Example.modulemap */,
+				1E099C9FE5ED0FB3B73008E7803B324D /* Pods-CallingCodesKit_Example-acknowledgements.markdown */,
+				DF7990E60F9241680A9B151B92969997 /* Pods-CallingCodesKit_Example-acknowledgements.plist */,
+				1BA42F080BE02D9E18D063F16731221C /* Pods-CallingCodesKit_Example-dummy.m */,
+				24F3EBE60A297E6F994E51C41BBA3DB3 /* Pods-CallingCodesKit_Example-frameworks.sh */,
+				194884144B5788E16C2B8591F4C5CC21 /* Pods-CallingCodesKit_Example-Info.plist */,
+				7092F49203DE08B419D0F9E5E4170B0C /* Pods-CallingCodesKit_Example-umbrella.h */,
+				A92B43FF6BBD81FE6AB4E7D2B6B58781 /* Pods-CallingCodesKit_Example.debug.xcconfig */,
+				FC7B0BCB84ED2996BEB91B0AB0E23318 /* Pods-CallingCodesKit_Example.release.xcconfig */,
+			);
+			name = "Pods-CallingCodesKit_Example";
+			path = "Target Support Files/Pods-CallingCodesKit_Example";
+			sourceTree = "<group>";
+		};
+		A07EB393B8795583E03F3721DF2B2223 /* CallingCodesKit */ = {
+			isa = PBXGroup;
+			children = (
+				4FF2F4BF25794D1800671F68 /* CountryCallingCodeCell.swift */,
+				4FF2F4B825794CBF00671F68 /* CallingCodesVC.swift */,
+				D7909FBD8D1B22A7F406113D52B39007 /* CountryCallingCode.json */,
+				B5C7209F9A7E19FFEF645B8F13E26515 /* ReplaceMe.swift */,
+				FA61F169E118C6FC9609FFA836F17D67 /* Pod */,
+				DCF2FAFDDC495F74F6D0BABDEA4B2222 /* Support Files */,
+			);
+			name = CallingCodesKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A0A8E50293C2900CFE9700E414E2A05D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB5900533855733FF944BFF59779F5DF /* CallingCodesKit.bundle */,
+				0CFCB1AD12F6118FB214FE4A879510BF /* CallingCodesKit.framework */,
+				7AC42D1B85889FF8205613B390EE789C /* Pods_CallingCodesKit_Example.framework */,
+				9EDC4DA577A3502C244DC3CDC5E8199C /* Pods_CallingCodesKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD1F89A063A87ED0491EBE42E03BBAEE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6377BBEB874E9DFDC9152DCEB37EDEC8 /* Pods-CallingCodesKit_Example */,
+				53B85854516FEAE2F253953F7AA79B6F /* Pods-CallingCodesKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EEF8761594666EA04E361A294B86751E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A0A8E50293C2900CFE9700E414E2A05D /* Products */,
+				BD1F89A063A87ED0491EBE42E03BBAEE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCF2FAFDDC495F74F6D0BABDEA4B2222 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDE2DAC0702331BE51E4FAD33B648C /* CallingCodesKit.modulemap */,
+				AFBAD5DA4B9C76A03C84FC616A3DC45F /* CallingCodesKit-dummy.m */,
+				867A3D1FCB1EA5F2F586C80E96C71D26 /* CallingCodesKit-Info.plist */,
+				10FFB01B14F57C2BB04871C2C1685FDA /* CallingCodesKit-prefix.pch */,
+				37973C21B00893AAE71F3166444F8752 /* CallingCodesKit-umbrella.h */,
+				26F56E228D646D3F2B5DDDF75DD12E9F /* CallingCodesKit.debug.xcconfig */,
+				BA05515DD5C0D0182690BA0A9F397AB0 /* CallingCodesKit.release.xcconfig */,
+				BAB0D0DCEE3ED58ED07BA67AAF853E99 /* ResourceBundle-CallingCodesKit-CallingCodesKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CallingCodesKit";
+			sourceTree = "<group>";
+		};
+		EEF8761594666EA04E361A294B86751E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A07EB393B8795583E03F3721DF2B2223 /* CallingCodesKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FA61F169E118C6FC9609FFA836F17D67 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				755C30F054A3A354F22E7D73F4551C42 /* CallingCodesKit.podspec */,
+				EA6CD9514DFFB560414755B3E59C4A3D /* LICENSE */,
+				C1415A5F1A4F875B9AF186F9B2FA240C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DF0D90DFEBDBFA956C55F4DFDE14655 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506810AB253349449208305CC07EBDED /* Pods-CallingCodesKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76823044E51B62943F6888BFD397B675 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33128E464719529A6961BC6F3B459349 /* Pods-CallingCodesKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61D6176B696ED1B718B17684328FFD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C010CDE83CC83FC59BC8DDE5BD825778 /* CallingCodesKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5CA0B2A867A469EB9EB557E1D5F74BF1 /* CallingCodesKit-CallingCodesKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6BBA1EC4C979CFE433FE56E1CDADF2F /* Build configuration list for PBXNativeTarget "CallingCodesKit-CallingCodesKit" */;
+			buildPhases = (
+				FDB273ED57409F498718DC4EB9CB3518 /* Sources */,
+				6288316E1B8BAFE64747CE5BF8FBF76B /* Frameworks */,
+				372AD44A012243423AD1FFB964951B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CallingCodesKit-CallingCodesKit";
+			productName = "CallingCodesKit-CallingCodesKit";
+			productReference = CB5900533855733FF944BFF59779F5DF /* CallingCodesKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		93E486071D285281C7D4D6B11091A282 /* Pods-CallingCodesKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998F2B3A7FF012D08BC9A0230A440E28 /* Build configuration list for PBXNativeTarget "Pods-CallingCodesKit_Tests" */;
+			buildPhases = (
+				4DF0D90DFEBDBFA956C55F4DFDE14655 /* Headers */,
+				4DCA07B7254A1364E0FF23FEEFFB2951 /* Sources */,
+				BD47E79A3501B3F8EA760D1EF9813FD4 /* Frameworks */,
+				191B5365E9B128F527DF373A416F0C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6946437CEA520E82A89CC58002FA0E91 /* PBXTargetDependency */,
+			);
+			name = "Pods-CallingCodesKit_Tests";
+			productName = "Pods-CallingCodesKit_Tests";
+			productReference = 9EDC4DA577A3502C244DC3CDC5E8199C /* Pods_CallingCodesKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9EBD612D4F4BEA977B2AC74CA86A2E8 /* CallingCodesKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AFE3FA3F1FFBA30633970F6B17102A /* Build configuration list for PBXNativeTarget "CallingCodesKit" */;
+			buildPhases = (
+				B61D6176B696ED1B718B17684328FFD6 /* Headers */,
+				8557AFC0A26DB668F2F525A832E884E0 /* Sources */,
+				AE9DB249504E7D9B2505519DCE771678 /* Frameworks */,
+				0611B5B454766DE6E8B3201E817633DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25738A5368054A01D077B9730CFB7C2D /* PBXTargetDependency */,
+			);
+			name = CallingCodesKit;
+			productName = CallingCodesKit;
+			productReference = 0CFCB1AD12F6118FB214FE4A879510BF /* CallingCodesKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D966AD4F75B854A06714D1A54EABE559 /* Pods-CallingCodesKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D5681BD116C75DB45D6A14D7766E27 /* Build configuration list for PBXNativeTarget "Pods-CallingCodesKit_Example" */;
+			buildPhases = (
+				76823044E51B62943F6888BFD397B675 /* Headers */,
+				FA1C4732EA80CF2D254D5EB414A30820 /* Sources */,
+				F2716D26AC59D867B00462187C7431E9 /* Frameworks */,
+				A4629A0E28B1F32682421C9FA8F0626D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0485DB5BBDBB0162A70F4C5648A97027 /* PBXTargetDependency */,
+			);
+			name = "Pods-CallingCodesKit_Example";
+			productName = "Pods-CallingCodesKit_Example";
+			productReference = 7AC42D1B85889FF8205613B390EE789C /* Pods_CallingCodesKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A0A8E50293C2900CFE9700E414E2A05D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9EBD612D4F4BEA977B2AC74CA86A2E8 /* CallingCodesKit */,
+				5CA0B2A867A469EB9EB557E1D5F74BF1 /* CallingCodesKit-CallingCodesKit */,
+				D966AD4F75B854A06714D1A54EABE559 /* Pods-CallingCodesKit_Example */,
+				93E486071D285281C7D4D6B11091A282 /* Pods-CallingCodesKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0611B5B454766DE6E8B3201E817633DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF2F4C9257954BA00671F68 /* CountryCallingCode.json in Resources */,
+				6B6CA19C2880188329F4DA04E72F912F /* CallingCodesKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191B5365E9B128F527DF373A416F0C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372AD44A012243423AD1FFB964951B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C46447FA61A81FF360F968037835A3 /* CountryCallingCode.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4629A0E28B1F32682421C9FA8F0626D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DCA07B7254A1364E0FF23FEEFFB2951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AE0688F9A3BB7BFFC2F8742CF913AC /* Pods-CallingCodesKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8557AFC0A26DB668F2F525A832E884E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF2F4C025794D1800671F68 /* CountryCallingCodeCell.swift in Sources */,
+				F8A76596743034E06AC2904862034240 /* CallingCodesKit-dummy.m in Sources */,
+				F2BD87F56492B8DF95B58A4C30E5D382 /* ReplaceMe.swift in Sources */,
+				4FF2F4B925794CBF00671F68 /* CallingCodesVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1C4732EA80CF2D254D5EB414A30820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9729A0CFEB52D9EBEC51B46C625B35CF /* Pods-CallingCodesKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB273ED57409F498718DC4EB9CB3518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0485DB5BBDBB0162A70F4C5648A97027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CallingCodesKit;
+			target = C9EBD612D4F4BEA977B2AC74CA86A2E8 /* CallingCodesKit */;
+			targetProxy = ADEA6EB6C85F21551FF4A75A8C01DE14 /* PBXContainerItemProxy */;
+		};
+		25738A5368054A01D077B9730CFB7C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CallingCodesKit-CallingCodesKit";
+			target = 5CA0B2A867A469EB9EB557E1D5F74BF1 /* CallingCodesKit-CallingCodesKit */;
+			targetProxy = F25BD3C21C8360DB74016C3B8B4DABC4 /* PBXContainerItemProxy */;
+		};
+		6946437CEA520E82A89CC58002FA0E91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CallingCodesKit_Example";
+			target = D966AD4F75B854A06714D1A54EABE559 /* Pods-CallingCodesKit_Example */;
+			targetProxy = 0D26E2832C42FF66ECFD2D67B92CFC90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0487263F65624C0C8A1AB244086E84C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F56E228D646D3F2B5DDDF75DD12E9F /* CallingCodesKit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CallingCodesKit";
+				IBSC_MODULE = CallingCodesKit;
+				INFOPLIST_FILE = "Target Support Files/CallingCodesKit/ResourceBundle-CallingCodesKit-CallingCodesKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CallingCodesKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		16D7C430ED5502981AC01CAFEB442E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA05515DD5C0D0182690BA0A9F397AB0 /* CallingCodesKit.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CallingCodesKit";
+				IBSC_MODULE = CallingCodesKit;
+				INFOPLIST_FILE = "Target Support Files/CallingCodesKit/ResourceBundle-CallingCodesKit-CallingCodesKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CallingCodesKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2DB2E202D93B7C369499083CF679CF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB71012F7CC1CC7F7BD3AD0077944AC /* Pods-CallingCodesKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CallingCodesKit_Tests/Pods-CallingCodesKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CallingCodesKit_Tests/Pods-CallingCodesKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57D37159CCEDE617B7AA8CCCF44FBF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F56E228D646D3F2B5DDDF75DD12E9F /* CallingCodesKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CallingCodesKit/CallingCodesKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CallingCodesKit/CallingCodesKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CallingCodesKit/CallingCodesKit.modulemap";
+				PRODUCT_MODULE_NAME = CallingCodesKit;
+				PRODUCT_NAME = CallingCodesKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A86E9DFE985A8DEED9BCFF48C145B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2790A5EABC5086E031F64B6CD417D2BA /* Pods-CallingCodesKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CallingCodesKit_Tests/Pods-CallingCodesKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CallingCodesKit_Tests/Pods-CallingCodesKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6492C9EB162C167C029207A3EDE5B283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92B43FF6BBD81FE6AB4E7D2B6B58781 /* Pods-CallingCodesKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CallingCodesKit_Example/Pods-CallingCodesKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CallingCodesKit_Example/Pods-CallingCodesKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69B27C361E34F8C910D9DA2486E6A7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7B0BCB84ED2996BEB91B0AB0E23318 /* Pods-CallingCodesKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CallingCodesKit_Example/Pods-CallingCodesKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CallingCodesKit_Example/Pods-CallingCodesKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D589FE8106E07E4E2FAE8CB570F8C664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA05515DD5C0D0182690BA0A9F397AB0 /* CallingCodesKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CallingCodesKit/CallingCodesKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CallingCodesKit/CallingCodesKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CallingCodesKit/CallingCodesKit.modulemap";
+				PRODUCT_MODULE_NAME = CallingCodesKit;
+				PRODUCT_NAME = CallingCodesKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998F2B3A7FF012D08BC9A0230A440E28 /* Build configuration list for PBXNativeTarget "Pods-CallingCodesKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB2E202D93B7C369499083CF679CF2A /* Debug */,
+				5A86E9DFE985A8DEED9BCFF48C145B16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6BBA1EC4C979CFE433FE56E1CDADF2F /* Build configuration list for PBXNativeTarget "CallingCodesKit-CallingCodesKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0487263F65624C0C8A1AB244086E84C3 /* Debug */,
+				16D7C430ED5502981AC01CAFEB442E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0AFE3FA3F1FFBA30633970F6B17102A /* Build configuration list for PBXNativeTarget "CallingCodesKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D37159CCEDE617B7AA8CCCF44FBF82 /* Debug */,
+				D589FE8106E07E4E2FAE8CB570F8C664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D5681BD116C75DB45D6A14D7766E27 /* Build configuration list for PBXNativeTarget "Pods-CallingCodesKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6492C9EB162C167C029207A3EDE5B283 /* Debug */,
+				69B27C361E34F8C910D9DA2486E6A7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
