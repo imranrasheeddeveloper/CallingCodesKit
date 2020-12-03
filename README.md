@@ -23,6 +23,7 @@ pod 'CallingCodesKit'
 import CountriesCallingCodes
 
 class ViewController: UIViewController, callingCodeData {
+    
     @IBOutlet weak var textLabel : UILabel!
     func countryCodeAndFlag(name: String, flag: String, code: String, dialCode: String) {
         textLabel.text = "\(flag) \(name) \(dialCode)"
