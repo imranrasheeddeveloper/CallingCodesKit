@@ -38,7 +38,7 @@ class ViewController: UIViewController, callingCodeData {
         let tap = UITapGestureRecognizer(target: self, action: #selector(callingCodeVC))
         textLabel.addGestureRecognizer(tap)    
     }
-}
+    }
 
 
 ## Screenshot
