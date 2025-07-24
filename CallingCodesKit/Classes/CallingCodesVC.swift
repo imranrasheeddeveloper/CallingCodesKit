@@ -127,17 +127,26 @@ extension CallingCodesVC  : UITableViewDelegate,UITableViewDataSource{
 open class ContryJsonData{
     static func loadData(compltionalHandler : @escaping(CountryCallingCodeModel)->()) {
         let myBundle = Bundle(for: Self.self)
-        guard let resourceBundleURL = myBundle.url(
-                forResource: "CountryCallingCode", withExtension: "json")
-        else{
+
+        // Resources are packaged inside a separate bundle when distributed via
+        // CocoaPods. Look for that bundle first and then the JSON file inside it.
+        guard
+            let bundleURL = myBundle.url(forResource: "CallingCodesKit", withExtension: "bundle"),
+            let resourceBundle = Bundle(url: bundleURL),
+            let jsonURL = resourceBundle.url(forResource: "CountryCallingCode", withExtension: "json")
+        else {
             return
         }
-        let data = try! Data(contentsOf: resourceBundleURL)
-        let callingCodes = try! JSONDecoder().decode(CountryCallingCodeModel.self, from: data)
-        
-        compltionalHandler(callingCodes)
-        
-        
+
+        do {
+            let data = try Data(contentsOf: jsonURL)
+            let callingCodes = try JSONDecoder().decode(CountryCallingCodeModel.self, from: data)
+            compltionalHandler(callingCodes)
+        } catch {
+            // In case of failure return an empty model to avoid crashing.
+            print("Failed to load CountryCallingCode.json: \(error)")
+            compltionalHandler(CountryCallingCodeModel(countries: []))
+        }
     }
 }
 
