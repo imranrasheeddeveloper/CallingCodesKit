@@ -7,20 +7,8 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first. The country code data is bundled with the framework so no additional setup is required.
 
-## Requirements
-```
-1-Go to Pods
-2-Select Target CallingCodesKit
-3-Click on build Phase
-4-Click on Copy Bundel Resources
-5-click on + Button
-6- In CallingCodesKit Section You can find out Resources folder
-7- Select CountryCallingCode.json
-8-click add
-for more Details please See the video in Usage Section
-```
 ## Installation
 
 CallingCodesKit is available through [CocoaPods](https://cocoapods.org). To install
@@ -37,7 +25,7 @@ pod 'CallingCodesKit'
 
 ```
 import CallingCodesKit
- 
+
 class ViewController: UIViewController, callingCodeData
    
   {
@@ -56,6 +44,33 @@ class ViewController: UIViewController, callingCodeData
         textLabel.addGestureRecognizer(tap)    
     }
  }
+```
+
+### SwiftUI
+
+```swift
+import SwiftUI
+import CallingCodesKit
+
+struct ContentView: View {
+    @State private var selected: CountryCallingCode_Data?
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                if let value = selected {
+                    Text("\(value.flag ?? "") \(value.name ?? "") \(value.dialCode ?? "")")
+                }
+                NavigationLink("Select Country") {
+                    CallingCodesListView { country in
+                        selected = country
+                    }
+                }
+            }
+            .navigationTitle("Example")
+        }
+    }
+}
 ```
 
 

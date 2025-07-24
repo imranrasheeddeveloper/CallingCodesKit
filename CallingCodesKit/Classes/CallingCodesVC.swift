@@ -126,27 +126,38 @@ extension CallingCodesVC  : UITableViewDelegate,UITableViewDataSource{
 
 open class ContryJsonData{
     static func loadData(compltionalHandler : @escaping(CountryCallingCodeModel)->()) {
+        var bundles: [Bundle] = []
+
+        #if SWIFT_PACKAGE
+        bundles.append(Bundle.module)
+        #endif
+
         let myBundle = Bundle(for: Self.self)
+        bundles.append(myBundle)
 
-        // Resources are packaged inside a separate bundle when distributed via
-        // CocoaPods. Look for that bundle first and then the JSON file inside it.
-        guard
-            let bundleURL = myBundle.url(forResource: "CallingCodesKit", withExtension: "bundle"),
-            let resourceBundle = Bundle(url: bundleURL),
-            let jsonURL = resourceBundle.url(forResource: "CountryCallingCode", withExtension: "json")
-        else {
-            return
+        if let bundleURL = myBundle.url(forResource: "CallingCodesKit", withExtension: "bundle"),
+           let resourceBundle = Bundle(url: bundleURL) {
+            bundles.append(resourceBundle)
         }
 
-        do {
-            let data = try Data(contentsOf: jsonURL)
-            let callingCodes = try JSONDecoder().decode(CountryCallingCodeModel.self, from: data)
-            compltionalHandler(callingCodes)
-        } catch {
-            // In case of failure return an empty model to avoid crashing.
-            print("Failed to load CountryCallingCode.json: \(error)")
-            compltionalHandler(CountryCallingCodeModel(countries: []))
+        bundles.append(Bundle.main)
+
+        for bundle in bundles {
+            if let jsonURL = bundle.url(forResource: "CountryCallingCode", withExtension: "json") {
+                do {
+                    let data = try Data(contentsOf: jsonURL)
+                    let callingCodes = try JSONDecoder().decode(CountryCallingCodeModel.self, from: data)
+                    compltionalHandler(callingCodes)
+                    return
+                } catch {
+                    continue
+                }
+            }
         }
+
+        // In case of failure return an empty model to avoid crashing.
+        print("Failed to load CountryCallingCode.json")
+        compltionalHandler(CountryCallingCodeModel(countries: []))
     }
 }
 
@@ -163,5 +174,9 @@ public struct CountryCallingCode_Data: Codable {
         case name, flag, code
         case dialCode = "dial_code"
     }
+}
+
+extension CountryCallingCode_Data: Identifiable {
+    public var id: String { code ?? UUID().uuidString }
 }
 
