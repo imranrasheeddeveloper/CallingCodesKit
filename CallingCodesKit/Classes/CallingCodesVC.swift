@@ -12,8 +12,10 @@ public protocol callingCodeData : class{
 }
 
 final public class CallingCodesVC: UIViewController,UISearchResultsUpdating {
-    
+
     public var  name, flag, code, dialCode: String?
+    /// ISO code of the country that should appear first in the list.
+    public var defaultCountryISOCode: String?
     public weak var delegate : callingCodeData?
     let tableview  = UITableView()
     var countriesCallingCodeArray = [CountryCallingCode_Data]()
@@ -51,6 +53,14 @@ final public class CallingCodesVC: UIViewController,UISearchResultsUpdating {
     func contreisCallingCodes() {
         ContryJsonData.loadData { [self] (data) in
             countriesCallingCodeArray = data.countries!
+
+            // Move the default country to the top if provided
+            if let iso = defaultCountryISOCode?.lowercased(),
+               let index = countriesCallingCodeArray.firstIndex(where: { $0.code?.lowercased() == iso }) {
+                let value = countriesCallingCodeArray.remove(at: index)
+                countriesCallingCodeArray.insert(value, at: 0)
+            }
+
             DispatchQueue.main.async {
                 tableview.reloadData()
             }
@@ -112,7 +122,9 @@ extension CallingCodesVC  : UITableViewDelegate,UITableViewDataSource{
             }
             else {
                 filteredTableData = countriesCallingCodeArray.filter {
-                    return ($0.name?.lowercased().contains(searchText))! || ($0.dialCode!.lowercased().contains(searchText))
+                    ($0.name?.lowercased().contains(searchText) ?? false) ||
+                    ($0.dialCode?.lowercased().contains(searchText) ?? false) ||
+                    ($0.code?.lowercased().contains(searchText) ?? false)
                 }
             }
         }
@@ -158,6 +170,45 @@ open class ContryJsonData{
         // In case of failure return an empty model to avoid crashing.
         print("Failed to load CountryCallingCode.json")
         compltionalHandler(CountryCallingCodeModel(countries: []))
+    }
+
+    /// Returns all countries synchronously.
+    public static func allCountries() -> [CountryCallingCode_Data] {
+        var result: [CountryCallingCode_Data] = []
+        loadData { model in
+            result = model.countries ?? []
+        }
+        return result
+    }
+
+    /// Finds a country using its ISO code.
+    public static func country(forISOCode code: String) -> CountryCallingCode_Data? {
+        allCountries().first { $0.code?.lowercased() == code.lowercased() }
+    }
+
+    /// Finds a country using its dial code (e.g. "+1").
+    public static func country(forDialCode dialCode: String) -> CountryCallingCode_Data? {
+        allCountries().first { $0.dialCode == dialCode }
+    }
+
+    /// Returns the country matching the current device locale.
+    public static func currentCountry() -> CountryCallingCode_Data? {
+        guard let region = Locale.current.regionCode else { return nil }
+        return country(forISOCode: region)
+    }
+
+    /// Returns the default country. If an ISO code is provided, it is used,
+    /// otherwise the device locale is consulted.
+    public static func defaultCountry(isoCode: String? = nil) -> CountryCallingCode_Data? {
+        if let code = isoCode {
+            return country(forISOCode: code)
+        }
+        return currentCountry()
+    }
+
+    /// Convenience: returns the dial code for the specified ISO code.
+    public static func dialCode(forISOCode code: String) -> String? {
+        country(forISOCode: code)?.dialCode
     }
 }
 

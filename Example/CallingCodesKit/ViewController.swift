@@ -17,6 +17,7 @@ class ViewController: UIViewController,callingCodeData {
     }
     @objc func callingCodeVC(){
         let vc = CallingCodesVC()
+        vc.defaultCountryISOCode = "US"
         vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -25,6 +26,11 @@ class ViewController: UIViewController,callingCodeData {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(callingCodeVC))
         textLabel.addGestureRecognizer(tap)
+
+        // Example of programmatic lookup
+        if let current = ContryJsonData.currentCountry() {
+            print("Current country: \(current.name ?? "")")
+        }
     }
     
 

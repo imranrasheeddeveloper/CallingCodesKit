@@ -35,6 +35,7 @@ class ViewController: UIViewController, callingCodeData
     }
     @objc func callingCodeVC(){
         let vc = CallingCodesVC()
+        vc.defaultCountryISOCode = "US" // show United States first
         vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -62,7 +63,7 @@ struct ContentView: View {
                     Text("\(value.flag ?? "") \(value.name ?? "") \(value.dialCode ?? "")")
                 }
                 NavigationLink("Select Country") {
-                    CallingCodesListView { country in
+                    CallingCodesListView(defaultCountryISOCode: "US") { country in
                         selected = country
                     }
                 }
@@ -72,6 +73,29 @@ struct ContentView: View {
     }
 }
 ```
+
+
+### Programmatic Utilities
+
+You can fetch calling code information without presenting any UI:
+
+```swift
+// Get all available countries
+let allCountries = ContryJsonData.allCountries()
+
+// Lookup by ISO code or dial code
+let us = ContryJsonData.country(forISOCode: "US")
+let plusOne = ContryJsonData.country(forDialCode: "+1")
+
+// Country for the current device locale
+let current = ContryJsonData.currentCountry()
+```
+
+### Default Country
+
+Both the view controller and the SwiftUI list let you specify a country that
+should appear at the top when presented. Simply set the `defaultCountryISOCode`
+property (or initializer parameter) to the desired ISO code.
 
 
 ## Screenshot

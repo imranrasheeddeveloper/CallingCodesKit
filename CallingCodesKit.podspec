@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CallingCodesKit'
-  s.version          = '0.1.2'
-  s.summary          = 'Countries Calling Codes Name Flags and Country Codes.'
+  s.version          = '0.1.4'
+  s.summary          = 'Countries calling codes with search, programmatic utilities, and default selection.'
   
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,9 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   
   s.description      = <<-DESC
-  Countries Calling Codes Use when Registring a phone number and want to get a country code Search Feature by code and By Country Name
-  Code will return you Country Name,Flag Image,dail code, and country Code.lieght weight and easy to use
+  Countries Calling Codes library with UI for selection and helpers for programmatic access.
+  Includes search by name, dial code or ISO code, utilities to lookup countries in code,
+  and the ability to specify a default country when presenting the selector.
   DESC
   
   s.homepage         = 'https://github.com/imranrasheeddeveloper/CallingCodesKit'
